@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    {% for horse in horses %}
+        <a class="captioned" href="{% url 'horse' horse.id %}">
+            <img src="{{ MEDIA_URL }}{{ horse.main_image }}">
+            <div>
+                <p>{{ horse.name }}</p>
+                <p>Порода: {{ horse.breed }}</p>
+                <p>Пол: {{ horse.gender }}</p>
+                <p>Височина: {{ horse.height }}</p>
+                <p>Роден на: {{ horse.date_of_birth }}</p>
+                <p>ЦЕНА: {{ horse.price }}</p>
+            </div>
+        </a>
+    {% endfor %}
+{% endblock %}

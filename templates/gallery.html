@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h2>Галерия</h2>
+
+
+    {% for img in gallery %}
+        <div class="row_project-list">
+            <div class="col-md-3 image-holder" >
+                <div class="thumbnail">
+                    <img src={{ MEDIA_URL }}{{ img.image }}>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+
+    <div class="clearfix"></div>
+
+    <div style="padding:6px;">
+        <p>Конна база "ЕЛИТ"</p>
+    </div>
+{% endblock %}

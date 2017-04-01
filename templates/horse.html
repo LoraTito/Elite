@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <nav class="navigation-secondary">
+        <a href="{% url 'horses' %}">НАЗАД</a>
+        <h2>{{ horse.name }}</h2>
+    </nav>
+
+    <div class="horse" style="background-image: url('{{ MEDIA_URL }}{{ horse.main_image }}');">
+        <div class="horseinfo">
+            <p>{{ horse.name }}</p>
+            <p>Порода: {{ horse.breed }}</p>
+            <p>Пол: {{ horse.gender }}</p>
+            <p>Височина: {{ horse.height }}</p>
+            <p>Роден на: {{ horse.dob }}</p>
+            <p>ЦЕНА: {{ horse.price }}</p>
+            <div class="video">
+            {{ horse.video_embed_code|safe }}
+            </div>
+
+
+        </div>
+    </div>
+{% endblock %}
