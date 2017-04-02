@@ -278,21 +278,6 @@ p {
     padding: 10px;
 }
 
-/* gallery */
-
-div.gallery {
-    border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
 div.desc {
     padding: 15px;
     text-align: center;
@@ -358,17 +343,18 @@ div.desc {
     transform: translate(-70%, -70%)
 }
 
-/*gallery*/
-.row_project-list {
-    display: inline;
+/* Gallery */
+
+.elite-gallery {
+    text-align: center;
+    padding: 20px;
 }
 
-.image-holder {
+.gallery-item {
+    display: inline-block;
+    width: 400px;
     height: 300px;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
 }
-
-.thumbnail {
-    overflow: auto;
-}
-
-

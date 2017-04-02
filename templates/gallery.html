@@ -1,25 +1,25 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block content %}
+{% block additional_libraries %}
+    <link href="{% static 'lib/lightbox2-master/dist/css/lightbox.min.css' %}" rel="stylesheet">
+    <script src="{% static 'lib/lightbox2-master/dist/js/lightbox.min.js' %}"></script>
+{% endblock %}
 
+{% block content %}
     <h2>Галерия</h2>
 
-
-    {% for img in gallery %}
-        <div class="row_project-list">
-            <div class="col-md-3 image-holder" >
-                <div class="thumbnail">
-                    <img src={{ MEDIA_URL }}{{ img.image }}>
-                </div>
-            </div>
-        </div>
-    {% endfor %}
-
-
-    <div class="clearfix"></div>
-
-    <div style="padding:6px;">
-        <p>Конна база "ЕЛИТ"</p>
+    <div class="elite-gallery">
+        {% for img in gallery %}
+            <a href="{{ MEDIA_URL }}{{ img.image }}" data-lightbox="gallery" class="gallery-item"
+               style="background-image: url('{{ MEDIA_URL }}{{ img.image }}');">
+            </a>
+        {% endfor %}
     </div>
+
+    {#    <div class="clearfix"></div>#}
+
+    {#    <div style="padding:6px;">#}
+    {#        <p>Конна база "ЕЛИТ"</p>#}
+    {#    </div>#}
 {% endblock %}
