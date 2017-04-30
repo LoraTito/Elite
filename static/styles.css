@@ -47,6 +47,14 @@ html, body {
     color: #ffe89c;
 }
 
+@media only screen and (max-width: 1210px) {
+    .menu-buttons-wrapper > a {
+        margin-left: 2%;
+        font-size: 10px;
+    }
+}
+
+
 .menu-buttons-wrapper > a:hover {
     border-bottom: 8px solid #faf2db;
     color: #faf2db;
@@ -187,6 +195,18 @@ p {
     margin-right: 40px;
     padding: 40px;
     color: #faf2db;
+}
+
+.iframe {
+    width: 640px;
+    height: 360px;
+}
+
+@media only screen and (max-width: 1210px) {
+    .iframe {
+        width: 320px;
+        height: 180px;
+    }
 }
 
 /* Horse for sale */
@@ -338,8 +358,8 @@ div.desc {
 .video {
     position: absolute;
     margin: auto;
-    top: 80%;
-    left: 75%;
+    top: 55%;
+    left: 80%;
     transform: translate(-70%, -70%)
 }
 
@@ -357,4 +377,9 @@ div.desc {
     padding: 0;
     background-size: cover;
     background-position: center;
+}
+
+.gallery-h1 {
+    font-family: "Lato", "Lucida Grande", Verdana, Arial, sans-serif;
+    text-align: center;
 }
