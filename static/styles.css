@@ -10,12 +10,12 @@ html, body {
 
 /* main page css*/
 .navigation-bar-shim {
-    height: 135px;
+    height: 140px;
 }
 
 .navigation-bar {
     width: 100%;
-    height: 135px;
+    height: 140px;
     background-color: #010101;
     color: #ffe89c;
     font-size: 15px;
