@@ -54,21 +54,17 @@ html, body {
     }
 }
 
-
 @media only screen and (min-width: 1500px) {
     .menu-buttons-wrapper > a {
         font-size: 20px;
     }
 }
 
-
 .menu-buttons-wrapper > a:hover {
     border-bottom: 8px solid #faf2db;
     color: #faf2db;
     text-decoration: none;
 }
-
-
 
 .opinion {
     color: white;

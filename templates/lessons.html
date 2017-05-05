@@ -4,72 +4,87 @@
 {% block content %}
 
     <div class="lessons">
-        <div class="lessons-info">
-            <h1>УРОЦИ ПО ЕЗДА</h1>
-            <p>В клуб по конен спорт “ЕЛИТ” провеждаме уроци и тренировки за напредннали и начинаещи.
-                Конете ни са добре обучени и могат да Ви бъдат партньори в избраната от Вас дисциплина.
-                Нашите треньори и инструктори са опитни и квалифицирани както в работата с животни, така
-                и с хора.</p>
+    <div class="lessons-info">
+    <h1>УРОЦИ ПО ЕЗДА</h1>
+    <p>В клуб по конен спорт “ЕЛИТ” провеждаме уроци и тренировки за напредннали и начинаещи.
+        Конете ни са добре обучени и могат да Ви бъдат партньори в избраната от Вас дисциплина.
+        Нашите треньори и инструктори са опитни и квалифицирани както в работата с животни, така
+        и с хора.</p>
 
-            <p>Предлагаме възможността при усилен тренировачен процес да участвате в състезания през
-                клуба, без задължително да разполагате със собствен кон.</p>
+    <p>Предлагаме възможността при усилен тренировачен процес да участвате в състезания през
+        клуба, без задължително да разполагате със собствен кон.</p>
 
-            <p>Освен езда на плаца предлагаме и езда в полето и планината. Тази услуга предполага поне
-                начални умения за езда.</p>
+    <p>Освен езда на плаца предлагаме и езда в полето и планината. Тази услуга предполага поне
+        начални умения за езда.</p>
 
-            <p>Осигурени са инструктор, пясъчен плац за езда и подготовка( с прилежашото оборудване:
-                стойки, греди, кавалети ),съблекални, баня, стая за почивка и др.</p>
+    <p>Осигурени са инструктор, пясъчен плац за езда и подготовка( с прилежашото оборудване:
+        стойки, греди, кавалети ),съблекални, баня, стая за почивка и др.</p>
 
-            <p>Цена: 20 лв. за урок от 30 минути.</p>
+    <p>Цена: 20 лв. за урок от 30 минути.</p>
 
 
-            <p>Треньор: Бранимир Кръстанов</p>
-            <p>Контакти: 0896 86 56 98</p>
+    <p>Треньор: Бранимир Кръстанов</p>
+    <p>Контакти: 0896 86 56 98</p>
 
-            <div id="carousel-lessons" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-{#            <ol class="carousel-indicators">#}
-{#                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>#}
-{#                <li data-target="#carousel-example-generic" data-slide-to="1"></li>#}
-{#                <li data-target="#carousel-example-generic" data-slide-to="2"></li>#}
-{#            </ol>#}
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="container" id="cont-lessons">
-                        <img src="{% static 'images/logoElitelightGold.png' %}"/>
-                    </div>
-                    <div class="carousel-caption">
-                    </div>
-
-                </div>
-                <div class="item">
-                    <div class="container" id="cont-lessons">
-                        <img src="{% static 'images/nistar.jpg' %}">
-                    </div>
-                    <div class="carousel-caption">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="container" id="cont-lessons">
-                        <img src="{% static 'images/footer.png' %}">
-                    </div>
-                    <div class="carousel-caption">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        </div>
+    <div class="lessons-img">
+        <ul class="slider lessons-slider">
+            <li><img src="{% static 'images/nike.jpg' %}"></li>
+            <li><img src="{% static 'images/nazir.jpg' %}"></li>
+        </ul>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                controls: false
+            });
+        });
+    </script>
+    {#            <div id="carousel-lessons" class="carousel slide" data-ride="carousel">#}
+    {#            <!-- Indicators -->#}
+    {#            <ol class="carousel-indicators">#}
+    {#                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>#}
+    {#                <li data-target="#carousel-example-generic" data-slide-to="1"></li>#}
+    {#                <li data-target="#carousel-example-generic" data-slide-to="2"></li>#}
+    {#            </ol>#}
+    {##}
+    {#            <!-- Wrapper for slides -->#}
+    {#            <div class="carousel-inner" role="listbox">#}
+    {#                <div class="item active">#}
+    {#                    <div class="container" id="cont-lessons">#}
+    {#                        <img src="{% static 'images/logoElitelightGold.png' %}"/>#}
+    {#                    </div>#}
+    {#                    <div class="carousel-caption">#}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {#                <div class="item">#}
+    {#                    <div class="container" id="cont-lessons">#}
+    {#                        <img src="{% static 'images/nistar.jpg' %}">#}
+    {#                    </div>#}
+    {#                    <div class="carousel-caption">#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#                <div class="item">#}
+    {#                    <div class="container" id="cont-lessons">#}
+    {#                        <img src="{% static 'images/footer.png' %}">#}
+    {#                    </div>#}
+    {#                    <div class="carousel-caption">#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {##}
+    {#            <!-- Controls -->#}
+    {#            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">#}
+    {#                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>#}
+    {#                <span class="sr-only">Previous</span>#}
+    {#            </a>#}
+    {#            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">#}
+    {#                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>#}
+    {#                <span class="sr-only">Next</span>#}
+    {#            </a>#}
+    {#        </div>#}
+    {#        </div>#}
+    {#    </div>#}
 {% endblock %}
