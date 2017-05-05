@@ -164,6 +164,15 @@ p {
     padding: 80px;
 }
 
+.lessons-slider {
+    width: 70%;
+    height: auto;
+    margin: 5px 20% 5px 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
 .lessons-info {
     text-align: center;
     background-color: #1d1d1d;
