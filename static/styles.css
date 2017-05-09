@@ -167,7 +167,8 @@ p {
 .lessons-slider {
     width: 70%;
     height: auto;
-    margin: 5px 20% 5px 20%;
+    margin-left: 15%;
+    margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 30px;
