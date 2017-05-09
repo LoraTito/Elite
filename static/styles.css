@@ -94,6 +94,8 @@ p {
 }
 
 .footer {
+    left: 0;
+    bottom: 0;
     padding-top: 50px;
     padding-bottom: 50px;
     background: url('images/footer.png') no-repeat right top;
@@ -346,6 +348,8 @@ div.desc {
 
 /* horse video*/
 .video {
+    width: 20%    !important;
+    height: auto   !important;
     position: absolute;
     margin: auto;
     top: 55%;
