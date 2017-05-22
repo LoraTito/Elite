@@ -24,7 +24,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
     url(r'^pansion$', views.pansion, name='pansion'),
-    url(r'^about$', views.about, name='about'),
     url(r'^horses/$', views.horses, name='horses'),
     url(r'^horses/(\d+)$', views.horse, name='horse'),
     url(r'^lessons$', views.lessons, name='lessons'),

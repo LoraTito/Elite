@@ -12,10 +12,6 @@ def pansion(request):
     return render(request, 'pansion.html')
 
 
-def about(request):
-    return render(request, 'about.html')
-
-
 def horses(request):
     data = {
         'horses': HorseForSale.objects.all(),

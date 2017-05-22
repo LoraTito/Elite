@@ -31,19 +31,18 @@
 
 <nav class="navigation-bar">
     <nav class="container-fluid">
-    <a id="facebook"
-       href="https://www.facebook.com/%D0%9A%D0%BE%D0%BD%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B0-%D0%95%D0%9B%D0%98%D0%A2-506174569412211/">
-        <img src={% static 'images/facebook.png' %} width="30px" height="30px">
-    </a>
+        <a id="facebook"
+           href="https://www.facebook.com/%D0%9A%D0%BE%D0%BD%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B0-%D0%95%D0%9B%D0%98%D0%A2-506174569412211/">
+            <img src={% static 'images/facebook.png' %} width="30px" height="30px">
+        </a>
 
-    <a href="{% url 'index' %}"><img class="logo" src={% static 'images/logoElitelightGold.png' %}></a>
+        <a href="{% url 'index' %}"><img class="logo" src={% static 'images/logoElitelightGold.png' %}></a>
 
-    <div class="menu-buttons-wrapper"><a href="{% url 'about' %}">ЗА НАС</a>
-        <a href="{% url 'pansion' %}">ПАНСИОН ЗА КОНЕ</a>
-        <a href="{% url 'lessons' %}">УРОЦИ ПО ЕЗДА</a>
-        <a href="{% url 'horses' %}">КОНЕ ЗА ПРОДАЖБА</a>
-        <a href="{% url 'gallery' %}">ГАЛЕРИЯ</a>
-    </div>
+        <div class="menu-buttons-wrapper"><a href="{% url 'pansion' %}">ПАНСИОН ЗА КОНЕ</a>
+            <a href="{% url 'lessons' %}">УРОЦИ ПО ЕЗДА</a>
+            <a href="{% url 'horses' %}">КОНЕ ЗА ПРОДАЖБА</a>
+            <a href="{% url 'gallery' %}">ГАЛЕРИЯ</a>
+        </div>
         </div>
     </nav>
 </nav>
