@@ -124,7 +124,7 @@ p {
 
 /* about us css*/
 .about_us {
-    background: url('images/Black-Horses.jpg') fixed no-repeat;
+    background-color: #1d1d1d;
     background-size: cover;
     padding: 80px;
 }
@@ -136,7 +136,7 @@ p {
     margin-left: 40px;
     margin-right: 40px;
     padding: 40px;
-    color: #faf2db;
+    color: #ebd68e;
 }
 
 /*pansion css */
