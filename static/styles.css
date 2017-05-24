@@ -11,7 +11,12 @@ html, body {
 
 }
 
+.background-padding {
+    padding: 150px 80px 450px 80px;
+}
+
 /* main page css*/
+
 .navigation-bar-shim {
     height: 140px;
 }
@@ -53,13 +58,13 @@ html, body {
 @media only screen and (max-width: 1210px) {
     .menu-buttons-wrapper > a {
         margin-left: 2%;
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
 @media only screen and (min-width: 1500px) {
     .menu-buttons-wrapper > a {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
@@ -117,9 +122,7 @@ p {
 #facebook {
     float: right;
     margin: 30px 50px 0 0;
-    /*position: absolute;*/
-    /*top: 10px;*/
-    /*right: 10px;*/
+
 }
 
 /* about us css*/
@@ -144,7 +147,7 @@ p {
 .pansion {
     background: url('images/bali.jpg') fixed no-repeat;
     background-size: cover;
-    padding: 80px;
+
 }
 
 .info {
@@ -166,7 +169,6 @@ p {
 .lessons {
     background: url('images/backroundmessage.jpg') fixed no-repeat;
     background-size: cover;
-    padding: 80px;
 }
 
 .lessons-slider {
@@ -221,6 +223,7 @@ p {
 }
 
 .captioned > div {
+    font-size: 20px;
     text-align: center;
     color: #faf2db;
     position: absolute;
@@ -235,6 +238,12 @@ p {
 
 .captioned:hover > div {
     display: block;
+}
+
+@media only screen and (max-width: 1210px){
+    .captioned {
+        width: 100%;
+    }
 }
 
 /*nishtar*/
@@ -273,7 +282,7 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 80px;
+    text-align: center;
 }
 
 .horseinfo {
@@ -347,14 +356,21 @@ div.desc {
 }
 
 /* horse video*/
-.video {
-    width: 20%    !important;
-    height: auto   !important;
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
     position: absolute;
-    margin: auto;
-    top: 55%;
-    left: 80%;
-    transform: translate(-80%, -70%);
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Gallery */

@@ -7,7 +7,7 @@
         <h2>{{ horse.name }}</h2>
     </nav>
 
-    <div class="horse" style="background-image: url('{{ MEDIA_URL }}{{ horse.main_image }}');">
+    <div class="horse background-padding" style="background-image: url('{{ MEDIA_URL }}{{ horse.main_image }}');">
         <div class="horseinfo">
             <p>{{ horse.name }}</p>
             <p>Порода: {{ horse.breed }}</p>
@@ -15,11 +15,9 @@
             <p>Височина: {{ horse.height }}</p>
             <p>Роден на: {{ horse.dob }}</p>
             <p>ЦЕНА: {{ horse.price }}</p>
-            <div class="video" id="horse-video">
+            <div>
             {{ horse.video_embed_code|safe }}
             </div>
-
-
         </div>
     </div>
 {% endblock %}
