@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block content %}
-{#    <div class="background-padding">#}
     {% for horse in horses %}
         <a class="captioned" href="{% url 'horse' horse.id %}">
             <img src="{{ MEDIA_URL }}{{ horse.main_image }}">
@@ -16,5 +15,4 @@
             </div>
         </a>
     {% endfor %}
-{#    </div>#}
 {% endblock %}
