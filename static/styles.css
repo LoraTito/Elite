@@ -8,14 +8,13 @@ html, body {
     font-family: Arial;
     position: relative;
     min-height: 100%;
-
 }
 
 .background-padding {
     padding: 150px 80px 450px 80px;
 }
 
-/* main page css*/
+/* main page*/
 
 .navigation-bar-shim {
     height: 140px;
