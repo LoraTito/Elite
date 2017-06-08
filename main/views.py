@@ -7,6 +7,9 @@ from main.models import ImageGallery
 def index(request):
     return render(request, 'index.html')
 
+def aboutus(request):
+    return render(request, 'aboutus.html')
+
 
 def pansion(request):
     return render(request, 'pansion.html')
