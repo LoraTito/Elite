@@ -12,6 +12,24 @@
 
     <title>Main Page</title>
 
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-101042513-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
     <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
@@ -46,7 +64,7 @@
         <a href="{% url 'index' %}"><img class="logo" src={% static 'images/logoElitelightGold.png' %}></a>
 
         <div class="menu-buttons-wrapper"><a href="{% url 'aboutus' %}">ЗА НАС</a>
-             <a href="{% url 'pansion' %}">ПАНСИОН ЗА КОНЕ</a>
+            <a href="{% url 'pansion' %}">ПАНСИОН ЗА КОНЕ</a>
             <a href="{% url 'lessons' %}">УРОЦИ ПО ЕЗДА</a>
             <a href="{% url 'horses' %}">КОНЕ ЗА ПРОДАЖБА</a>
             <a href="{% url 'gallery' %}">ГАЛЕРИЯ</a>
