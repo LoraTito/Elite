@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from main.models import HorseForSale
 from main.models import ImageGallery
@@ -35,3 +35,7 @@ def gallery(request):
 
 def lessons(request):
     return render(request, 'lessons.html')
+
+
+def page_404(request):
+    return redirect('index', permanent=True)

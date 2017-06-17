@@ -20,6 +20,8 @@ from django.contrib import admin
 
 from main import views
 
+handler404 = views.page_404
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
