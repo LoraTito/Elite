@@ -28,6 +28,7 @@ urlpatterns = [
     url(r'^horses/$', views.horses, name='horses'),
     url(r'^horses/(\d+)$', views.horse, name='horse'),
     url(r'^lessons$', views.lessons, name='lessons'),
+    url(r'^lessonhorses$', views.lessonhorses, name='lessonhorses'),
     url(r'^gallery$', views.gallery, name='gallery'),
     url(r'^media/(?P<path>.*)$', django.views.static.serve,
         {'document_root': settings.MEDIA_ROOT}),

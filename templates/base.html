@@ -23,7 +23,8 @@
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        })(window, document, 'script', 'https://ww' +
+            'w.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-101042513-1', 'auto');
         ga('send', 'pageview');
@@ -66,6 +67,7 @@
         <div class="menu-buttons-wrapper"><a href="{% url 'aboutus' %}">ЗА НАС</a>
             <a href="{% url 'pansion' %}">ПАНСИОН ЗА КОНЕ</a>
             <a href="{% url 'lessons' %}">УРОЦИ ПО ЕЗДА</a>
+            <a href="{% url 'lessonhorses' %}">УЧЕБНИ КОНЕ</a>
             <a href="{% url 'horses' %}">КОНЕ ЗА ПРОДАЖБА</a>
             <a href="{% url 'gallery' %}">ГАЛЕРИЯ</a>
         </div>
