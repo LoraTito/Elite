@@ -39,5 +39,6 @@ def gallery(request):
 def lessons(request):
     return render(request, 'lessons.html')
 
-def lessonhorses(request):
-    return render(request, 'lessonhorses.html')
+
+def karina(request):
+    return render(request, 'karina.html')

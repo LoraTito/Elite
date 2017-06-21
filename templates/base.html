@@ -67,7 +67,17 @@
         <div class="menu-buttons-wrapper"><a href="{% url 'aboutus' %}">ЗА НАС</a>
             <a href="{% url 'pansion' %}">ПАНСИОН ЗА КОНЕ</a>
             <a href="{% url 'lessons' %}">УРОЦИ ПО ЕЗДА</a>
-            <a href="{% url 'lessonhorses' %}">УЧЕБНИ КОНЕ</a>
+            <div class="dropdown display_inline-block toggle-button_wrapper">
+                <a id="dLabel" data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                    УЧЕБНИ КОНЕ
+                    <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="{% url 'karina' %}">КАРИНА</a></li>
+                </ul>
+            </div>
             <a href="{% url 'horses' %}">КОНЕ ЗА ПРОДАЖБА</a>
             <a href="{% url 'gallery' %}">ГАЛЕРИЯ</a>
         </div>
@@ -85,6 +95,12 @@
         <p id="brand">Сайт от Лора Титоренкова &copy;</p>
     </div>
 </div>
+
+<script>
+
+    $('.dropdown-toggle').dropdown('toggle')
+
+</script>
 
 </body>
 </html>
