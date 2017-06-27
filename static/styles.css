@@ -84,6 +84,7 @@ html, body {
     text-decoration: none;
 }
 
+
 @media only screen and (max-width: 1210px) {
     .menu-buttons-wrapper > a {
         margin-left: 2%;

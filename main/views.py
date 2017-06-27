@@ -42,3 +42,6 @@ def lessons(request):
 
 def karina(request):
     return render(request, 'karina.html')
+
+def nikita(request):
+    return render(request, 'nikita.html')

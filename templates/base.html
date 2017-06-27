@@ -29,7 +29,9 @@
         ga('create', 'UA-101042513-1', 'auto');
         ga('send', 'pageview');
 
+        $('.dropdown-toggle').dropdown('toggle')
     </script>
+
 
     <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -76,6 +78,7 @@
 
                 <ul class="dropdown-menu" aria-labelledby="dLabel">
                     <li><a href="{% url 'karina' %}">КАРИНА</a></li>
+                    <li><a href="{% url 'nikita' %}">НИКИТА</a></li>
                 </ul>
             </div>
             <a href="{% url 'horses' %}">КОНЕ ЗА ПРОДАЖБА</a>
@@ -96,11 +99,6 @@
     </div>
 </div>
 
-<script>
-
-    $('.dropdown-toggle').dropdown('toggle')
-
-</script>
 
 </body>
 </html>
