@@ -183,6 +183,36 @@ p {
     color: #ebd68e;
 }
 
+/* Form*/
+
+.form {
+    width: 60%;
+    margin-left: 20%;
+    background-color: #777777;
+    color: black;
+
+    margin-right: 40px;
+    padding: 40px;
+    text-align: center;
+}
+.form input {
+    width: 80%;
+    height: 40px;
+}
+
+.form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    color: white;
+}
+
+form textarea {
+    color: black;
+    width: 80%;
+    height: 100px;
+}
+
 /*pansion css */
 
 .pansion {
@@ -434,29 +464,6 @@ div.desc {
     font-family: "Lato", "Lucida Grande", Verdana, Arial, sans-serif;
     text-align: center;
 }
-/* Form*/
-
-.form {
-    width: 60%;
-    margin-left: 20%;
-    background-color: #777777;
-    color: black;
-
-    margin-right: 40px;
-    padding: 40px;
-    text-align: center;
-}
-
-.form label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 2px;
-    color: white;
-}
-
-form textarea {
-    color: black;
-}
 
 /* tranig horses*/
 .traininghorses {
@@ -471,10 +478,11 @@ form textarea {
 }
 
 button {
+    width: 120px;
     margin-top: 20px;
-    padding: 10px;
-    background-color: antiquewhite;
-    color: #ebd68e;
+    padding: 15px;
+    background-color: white;
+    color: #1d1d1d;
     border-radius: 5px ;
 }
 
